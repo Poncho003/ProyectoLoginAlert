@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetFragment">
+
+    <!-- Layout principal con fondo personalizado -->
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backdos"
+        tools:context=".MainActivity">
+
+        <!-- Título centrado de la pantalla de reseteo de contraseña (Reset) -->
+        <TextView
+            android:id="@+id/txtReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <!-- Campo de texto para ingresar el nombre de usuario -->
+        <EditText
+            android:id="@+id/etxtUsernameReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtReset"
+            android:layout_margin="15dp"
+            android:layout_marginTop="260dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="20dp"
+            android:hint="User"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Campo de texto para ingresar la contraseña actual -->
+        <EditText
+            android:id="@+id/etxtPasswordReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etxtUsernameReset"
+            android:layout_margin="15dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Campo de texto para ingresar la nueva contraseña -->
+        <EditText
+            android:id="@+id/etxtNewPasswordReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etxtPasswordReset"
+            android:layout_margin="15dp"
+            android:background="#30ffffff"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="20dp"
+            android:hint="New Password"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Botón de reset de contraseña -->
+        <Button
+            android:id="@+id/btnRegisterReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textSize="25sp"
+            android:layout_below="@+id/etxtNewPasswordReset"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#009688" />
+
+        <!-- Contenedor para los íconos de inicio de sesión con redes sociales (Twitter, Google, Facebook) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <!-- Ícono de Twitter a la izquierda -->
+            <ImageView
+                android:id="@+id/iv_twitter"
+                android:layout_width="49dp"
+                android:layout_height="39dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="Twitter login"
+                android:src="@drawable/twitter" />
+
+            <!-- Ícono de Google en el centro -->
+            <ImageView
+                android:id="@+id/iv_google"
+                android:layout_width="49dp"
+                android:layout_height="39dp"
+                android:contentDescription="Google login"
+                android:src="@drawable/google" />
+
+            <!-- Ícono de Facebook a la derecha -->
+            <ImageView
+                android:id="@+id/iv_facebook"
+                android:layout_width="49dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="10dp"
+                android:contentDescription="Facebook login"
+                android:src="@drawable/fb" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

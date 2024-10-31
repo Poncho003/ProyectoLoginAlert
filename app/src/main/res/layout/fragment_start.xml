@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backstart"
+    tools:context=".StartFragment">
+
+    <!-- Layout principal que usa FrameLayout para contener diferentes vistas y posicionarlas sobrepuestas o alineadas -->
+
+    <!-- Contenedor de botones y texto -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="80dp">
+
+        <!-- Imagen del ícono -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/baseline_home"/>
+
+        <!-- Texto que aparece debajo de la imagen, en este caso "GO HOME" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO HOME"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Sección inferior de botones y texto -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal">
+
+        <!-- Botón de inicio de sesión (Login) -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="25dp"
+            android:backgroundTint="#00BCD4"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Botón de registro (Register) -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="25dp"
+            android:backgroundTint="#00BCD4"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Texto que permite continuar como invitado (Continue as guest) -->
+        <TextView
+            android:id="@+id/tvGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue as guest"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColorLink="#00BCD4"/>
+
+        <!-- Línea decorativa debajo del texto "Continue as guest" -->
+        <View
+            android:layout_width="148dp"
+            android:layout_height="1dp"
+            android:background="@android:color/white"
+            android:layout_marginTop="-5dp"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

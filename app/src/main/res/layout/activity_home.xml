@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hello"
+    tools:context=".HomeActivity">
+
+    <!-- Presenta la imagen de fondo con el texto de Home dentro de la pnatalla de bienvenido. -->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:padding="16dp" />
+
+
+</RelativeLayout>
